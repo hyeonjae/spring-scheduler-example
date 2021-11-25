@@ -7,7 +7,8 @@ import org.springframework.stereotype.Component
 class Beeper {
     @Scheduled(fixedDelay = 1000)
     fun beep() {
-        println("beep!!!")
+        var message = "beep !!!"
+        println(message)
     }
 
     @Scheduled(cron = "* * * * * *")
