@@ -12,6 +12,8 @@ class Beeper {
 
     @Scheduled(cron = "* * * * * *")
     fun ping() {
-        println("ping!!!")
+        var message = ""
+        message = "ping!!!"
+        println(message)
     }
 }
