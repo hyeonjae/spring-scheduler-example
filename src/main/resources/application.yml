@@ -1,0 +1,18 @@
+server:
+  port: 8082
+
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:8080
+        instance:
+          service-url: http://localhost:8082
+  application:
+    name: spring-scheduler-example
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
