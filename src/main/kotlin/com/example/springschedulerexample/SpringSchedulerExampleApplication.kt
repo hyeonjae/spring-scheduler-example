@@ -9,5 +9,7 @@ import org.springframework.scheduling.annotation.EnableScheduling
 class SpringSchedulerExampleApplication
 
 fun main(args: Array<String>) {
+    var a = 5
+    println(a)
     runApplication<SpringSchedulerExampleApplication>(*args)
 }
