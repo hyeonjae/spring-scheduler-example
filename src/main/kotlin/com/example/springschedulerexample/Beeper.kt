@@ -14,4 +14,12 @@ class Beeper {
     fun ping() {
         println("ping!!!")
     }
+
+    @Scheduled(cron = "* * * * * *")
+    fun pong() {
+        var message = ""
+        message = "pong!!!"
+        println(message)
+    }
+
 }
